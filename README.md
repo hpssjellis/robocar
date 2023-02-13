@@ -13,6 +13,12 @@ If you understand the referencing sytem it is in the "dot55" area.
 https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/examples/dot5-portenta-machine-learning/dot55-robocar
 
 
+Checkout the price list at [price-list.md](price-list.md)
+
+
+
+
+
 
 
 
