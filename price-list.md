@@ -102,6 +102,7 @@ for $12.99 USD
 5. [Arduino PortentaH7](https://store-usa.arduino.cc/products/portenta-h7)  $103.40 USD 
 6. [Arduino LoRa Vision Shield](https://store-usa.arduino.cc/products/arduino-portenta-vision-shield-lora%C2%AE) $63.25 USD
 7. [https://www.waveshare.com/1.5inch-oled-module.htm](https://www.waveshare.com/1.5inch-oled-module.htm) $12.99 USD
+8. Will also need a usb-C cable, usb battery pack and a 3D printer might be useful
 <br>
 
 Other costs are:  usb-C cable, USB battery pack, 3D Printing ability, general wires and soldering equipment.
