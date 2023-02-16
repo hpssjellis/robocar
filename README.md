@@ -27,7 +27,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
       2. On the dasho=board far right change (one label to bounding boxes). This makes it a FOMO  (faster objects, more objects) vision model. Also set Target Device to "Arduino PortentaH7 (Cortex M7 H80 MHz)" 
       3. Use the menu connect devices and go to uploader and upload your images that you took of the car driving around your object to detect
       4. Go to menu item Data Aquisiton and click on the "Queue" and start drawing bounding boxes around your objects. "Make sure the label is the same for all of them I use "1eye". The number one in front is very important. 
-      5. When all images are labelled, create your standard FOMO model by clicking "create impulse" and choose the standard Edge Impulse image and object detection blocks. Check before saving the im[pulse that it has only one object.
+      5. When all images are labelled, create your standard FOMO model by clicking "create impulse" and choose the standard Edge Impulse image and object detection blocks. Check before saving the impulse that it has only one object.
       6. For the menu item "image" make sure you are saving Grayscale not RGB 
       6. Still in "Image" "Generate Features" wait a few minutes to see the "Feature explorer". Check for weird images and delete or change them
       7. Menu item "Object Detection" set number of training cycles to about 220, whatever works. Add "Data Augmentation" and "start Training" takes about 8 minutes.  
@@ -40,7 +40,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
       14. Return to Edgeimpulse and try to improve your model.
 7. Download the arduino library and install the .zip file
 8. Load the Arduino sketch [dot551-robocar-v1.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot5-portenta-machine-learning/dot55-robocar/dot551-robocar-v1/dot551-robocar-v1.ino) but loading it is easy from the Arduino IDE installed "Portenta Pro Community Solutions" library sketch dot551 (check for newer versions)
-9. If you have the WaveShare grayscale 128 x 128 OLED then attach the correct pins and run the code and abserve your modle if it works.
+9. If you have the WaveShare grayscale 128 x 128 OLED then attach the correct pins and run the code and observe your modle if it works.
 10. Remove the 5 wire servo that comes with the shredder car and attach the 3 wire servo. The ball joints are a bit difficult to replace.
 11. Using a long breadboard attached to the car, connect the Big Motor Drive and Servo motor driver making sure the high car voltage is kept away from the 5 volt USB input Portenta
 12. Test that the mechanical parts of the car are working by running this test code [here ./media/a01-motor-testing.ino](./media/a01-motor-testing.ino). This allows you to check the motor slowest speed and best full turning angle. (Don't push the angles too far as the servo motor complains)
