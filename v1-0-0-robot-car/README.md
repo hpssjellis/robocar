@@ -17,10 +17,10 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
 
 ## Main Build steps
 
-1. Purchase parts checkout the price list at [price-list.md](price-list.md)
+1. Purchase parts checkout the price list at [../media/price-list.md](../media/price-list.md)
 2. Have fun with the RC car, without breaking it.
 3. Find your objects to track. I use double sided black circles on photo copy paper. Cut them out 
-4. 3D Print or make with wood or cardboard, some way to hold the portentaH7 with LoRa vision shield on the car along with a usb-C cable with battery pack, attach to the car while it still has the RC componenets working. This allows you to drive the car while taking lots of images on the SD card. You will need this program [dot362-png-to-sd-card.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot3-portenta-vision-shields/dot36-camera-png-to-web/dot362-png-to-sd-card/dot362-png-to-sd-card.ino) You might want to attch sunglasses to the model if reflections are a problem when using the car inside.
+4. 3D Print [../media/rc-Car-frame28-22degrees-V28-22-degrees.stl](../media/rc-Car-frame28-22degrees-V28-22-degrees.stl) or these smaller prints [../media/rc-Car-frame27-bread-front.stl](../media/rc-Car-frame27-bread-front.stl)   and [../media/rc-Car-frame27-bread-back.stl](../media/rc-Car-frame27-bread-back.stl) or make with wood or cardboard, you need some method to hold the portentaH7 with LoRa vision shield on the car along with a usb-C cable with battery pack, attach to the car while it still has the RC componenets working. This allows you to drive the car while taking lots of images on the SD card. You will need this program [dot362-png-to-sd-card.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot3-portenta-vision-shields/dot36-camera-png-to-web/dot362-png-to-sd-card/dot362-png-to-sd-card.ino) You might want to attach sunglasses to the model if reflections are a problem when using the car inside.
 
 5. EdgeImpulse.com upload and train a FOMO model or grab this one [here ei-ei-v25-fomo-eyes-shades-arduino-1.0.2.zip](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/zipped-libraries/edge-Impulse/arduino-exported/Portenta-Camera/ei-ei-v25-fomo-eyes-shades-arduino-1.0.2.zip)
       1. login or register for [Edgeimpulse.com](Edgeimpulse.com)
@@ -43,7 +43,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
 9. If you have the WaveShare grayscale 128 x 128 OLED then attach the correct pins and run the code and observe your modle if it works.
 10. Remove the 5 wire servo that comes with the shredder car and attach the 3 wire servo. The ball joints are a bit difficult to replace.
 11. Using a long breadboard attached to the car, connect the Big Motor Drive and Servo motor driver making sure the high car voltage is kept away from the 5 volt USB input Portenta
-12. Test that the mechanical parts of the car are working by running this test code [here ./media/a01-motor-testing.ino](./media/a01-motor-testing.ino). This allows you to check the motor slowest speed and best full turning angle. (Don't push the angles too far as the servo motor complains)
+12. Test that the mechanical parts of the car are working by running this test code [here ../media/a01-motor-testing.ino](../media/a01-motor-testing.ino). This allows you to check the motor slowest speed and best full turning angle. (Don't push the angles too far as the servo motor complains)
 13. Once everything is proved to work, upload the main code again, change a few of the variables such as PWM_MIN and maximum turning angles, and try out your car
 14. Start editing the code to make it work better
 15. Also edit the 3D Printing to add lights, etc.
@@ -54,7 +54,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
 
 
 
-[../media/rc-Car-frame28-22degrees-V28-22-degrees.stl](../media/rc-Car-frame28-22degrees-V28-22-degrees.stl)
+
 
 
 
