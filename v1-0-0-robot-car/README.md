@@ -24,7 +24,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
 
 5. EdgeImpulse.com upload and train a FOMO model or grab this one [here ei-ei-v25-fomo-eyes-shades-arduino-1.0.2.zip](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/zipped-libraries/edge-Impulse/arduino-exported/Portenta-Camera/ei-ei-v25-fomo-eyes-shades-arduino-1.0.2.zip)
       1. login or register for [Edgeimpulse.com](Edgeimpulse.com)
-      2. On the dasho=board far right change (one label to bounding boxes). This makes it a FOMO  (faster objects, more objects) vision model. Also set Target Device to "Arduino PortentaH7 (Cortex M7 H80 MHz)" 
+      2. On the dashboard far right change (one label to bounding boxes). This makes it a FOMO  (faster objects, more objects) vision model. Also set Target Device to "Arduino PortentaH7 (Cortex M7 H80 MHz)" 
       3. Use the menu connect devices and go to uploader and upload your images that you took of the car driving around your object to detect
       4. Go to menu item Data Aquisiton and click on the "Queue" and start drawing bounding boxes around your objects. "Make sure the label is the same for all of them I use "1eye". The number one in front is very important. 
       5. When all images are labelled, create your standard FOMO model by clicking "create impulse" and choose the standard Edge Impulse image and object detection blocks. Check before saving the impulse that it has only one object.
