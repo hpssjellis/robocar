@@ -54,5 +54,8 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
 
 
 
+[./media/rc-Car-frame28-22degrees-V28-22-degrees.stl](./media/rc-Car-frame28-22degrees-V28-22-degrees.stl)
+
+
 
 
