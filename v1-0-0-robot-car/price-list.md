@@ -18,11 +18,12 @@ $189.99 CDN
  $44.95 USD
 
 
-<img src="https://user-images.githubusercontent.com/5605614/133374122-6af08f67-3216-41f2-9b39-30c7eb15e9a4.png" width=300 /> And these plugs [WSD1302 plug set](https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/)    
-$2.99 USD
+<img src="https://user-images.githubusercontent.com/5605614/133374122-6af08f67-3216-41f2-9b39-30c7eb15e9a4.png" width=300 /> And these plugs you need 2 of the female connector so get 2 sets. [WSD1302 plug set](https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/)    
+$2.99 USD<img width="362" alt="bullet-connectors" src="https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png">
 
 
 
+[Bullet Connectors]([https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png](https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png)) only need 2 female bullet connectors this is a set of 50 for  $11.99 USD
 
 # Note: 
 
@@ -96,13 +97,14 @@ for $12.99 USD
 
 
 1. [RC-Pro SHREDDER](https://www.rcpro.ca/collections/shredder/products/shredder) $189.99 CDN  
-2. [WSD1302 plug set](https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/) $2.99 USD
-3. [Big VNH5019 Motor Driver Carrier](https://www.pololu.com/product/1451) $44.95 USD 
-4. [3 wire Servo ](https://www.rcpro.ca/collections/shredder/products/shredder-3-wires-19gram-metal-gear-servo)  $24.99 CDN
-5. [Arduino PortentaH7](https://store-usa.arduino.cc/products/portenta-h7)  $103.40 USD 
-6. [Arduino LoRa Vision Shield](https://store-usa.arduino.cc/products/arduino-portenta-vision-shield-lora%C2%AE) $63.25 USD
-7. [https://www.waveshare.com/1.5inch-oled-module.htm](https://www.waveshare.com/1.5inch-oled-module.htm) $12.99 USD
-8. Will also need a usb-C cable, usb battery pack and a micro-sd card polarized sunglasses. A 3D printer might be useful
+2. [WSD1302 plug set](https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/) 2 sets  $2.99 USD
+2. [Bullet Connectors]([https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/](https://www.amazon.com/AIRIC-Bullet-Connectors-Insulated-Terminals/dp/B08ZSQZCCR?th=1)) only need 2 female bullet connectors this is a set of 50 for  $11.99 USD
+4. [Big VNH5019 Motor Driver Carrier](https://www.pololu.com/product/1451) $44.95 USD 
+5. [3 wire Servo ](https://www.rcpro.ca/collections/shredder/products/shredder-3-wires-19gram-metal-gear-servo)  $24.99 CDN
+6. [Arduino PortentaH7](https://store-usa.arduino.cc/products/portenta-h7)  $103.40 USD 
+7. [Arduino LoRa Vision Shield](https://store-usa.arduino.cc/products/arduino-portenta-vision-shield-lora%C2%AE) $63.25 USD
+8. [https://www.waveshare.com/1.5inch-oled-module.htm](https://www.waveshare.com/1.5inch-oled-module.htm) $12.99 USD
+9. Will also need a usb-C cable, usb battery pack and a micro-sd card polarized sunglasses. A 3D printer might be useful
 <br>
 
 Other costs are:  usb-C cable, USB battery pack, 3D Printing ability, general wires and soldering equipment.
