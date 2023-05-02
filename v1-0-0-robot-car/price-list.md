@@ -18,13 +18,17 @@ $189.99 CDN
  $44.95 USD
 
 
+.
+
 <img src="https://user-images.githubusercontent.com/5605614/133374122-6af08f67-3216-41f2-9b39-30c7eb15e9a4.png" width=300 /> And these plugs you need 2 of the female connector so get 2 sets. [WSD1302 plug set](https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/)   
 
 $2.99 USD 
 
+.
 
 
-<img src="https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png" width=300 />
+
+<img src="https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png" width=200 />
 You only need 2 female bullet connectors this is a set of 50 for  $11.99 USD.  [Bullet Connector](https://www.amazon.com/AIRIC-Bullet-Connectors-Insulated-Terminals/dp/B08ZSQZCCR?th=1)
 
 # Note: 
