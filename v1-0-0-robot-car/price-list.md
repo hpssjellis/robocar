@@ -13,17 +13,16 @@ $189.99 CDN
 # Must also have
 
 
- Everone needs the Big Motor Driver <br>
+ Everyone needs the Big Motor Driver <br>
  <img src="https://user-images.githubusercontent.com/5605614/133374088-cc719213-80e5-47c9-a8d1-b476c2cc336c.png" width=300 /> [Big VNH5019 Motor Driver Carrier](https://www.pololu.com/product/1451)   
  $44.95 USD
 
 
 <img src="https://user-images.githubusercontent.com/5605614/133374122-6af08f67-3216-41f2-9b39-30c7eb15e9a4.png" width=300 /> And these plugs you need 2 of the female connector so get 2 sets. [WSD1302 plug set](https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/)    
-$2.99 USD<img width="362" alt="bullet-connectors" src="https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png">
+$2.99 USD<img width="362" alt="bullet-connectors" src="https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png"><br><br>
 
 
-
-[Bullet Connectors]([https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png](https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png)) only need 2 female bullet connectors this is a set of 50 for  $11.99 USD
+[https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png](https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png) only need 2 female bullet connectors this is a set of 50 for  $11.99 USD.  [Bullet Connector](https://www.amazon.com/AIRIC-Bullet-Connectors-Insulated-Terminals/dp/B08ZSQZCCR?th=1)
 
 # Note: 
 
