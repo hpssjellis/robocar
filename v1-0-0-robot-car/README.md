@@ -37,7 +37,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
       12. Flash the code to the Portenta connected to your car. Make sure both batteries are charaged. 
       13. Always unplug both batteries when you have finished testing the car.
       14. Return to Edgeimpulse and try to improve your model.
-7. Download the arduino library and install the .zip file
+7. Download the exported Edgeimpulse arduino library and install the .zip file into the Arduino IDE (Sketch--> Include Library --> Add .ZIP Library)
 8. Load the Arduino sketch [dot551-robocar-v1.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot5-portenta-machine-learning/dot55-robocar/dot551-robocar-v1/dot551-robocar-v1.ino) but loading it is easy from the Arduino IDE installed "Portenta Pro Community Solutions" library sketch dot551 (check for newer versions)
 9. If you have the WaveShare grayscale 128 x 128 OLED then attach the correct pins and run the code and observe your model if it works.
 10. Remove the 5 wire servo that comes with the shredder car and attach the 3 wire servo. The ball joints are a bit difficult to replace.
