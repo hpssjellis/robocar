@@ -1,12 +1,13 @@
-# robocar
-Shredder Robot Toy Car Arduino hacked for machine learning with the PortentaH7 and vision shield
+
+# Shredder RoboCar with the Arduino PortentaH7 and Vision Shield.
+Needs a big motor driver, servo motor, connectors, usb cable and usb battery pack, ability to 3D Print large objects. See [price-list.md](price-list.md)
 
 
 
-## This is a difficult build and may need some adaptations for your project: For example we used a large printbed 3D printer to make the 10.5 inch long frame (26.7 cm). 
+## This is a difficult build and may need some adaptations for your project: For example we used a large print-bed 3D printer to make the 10.5 inch long frame (26.7 cm). You may choose to split that frame up or put the hardware somewhere else on the car.
 
 
-The software to use is on my Arduino IDE ready library the "Portenta Pro Community Solutions".  
+The software to use is online as part of my Arduino IDE ready, library the "Portenta Pro Community Solutions".  
 If you understand the referencing sytem it is in the "dot55" area.
 
 https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/examples/dot5-portenta-machine-learning/dot55-robocar
@@ -53,7 +54,14 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
 
 
 
+Mh students cars
 
+<img src="../media/student-cars2.png" width=300 />
+<img src="../media/" width=300 />
+<img src="../media/" width=300 />
+<img src="../media/" width=300 />
+<img src="../media/" width=300 />
+<img src="../media/" width=300 />
 
 
 
