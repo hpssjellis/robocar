@@ -8,7 +8,10 @@ Needs a big motor driver, servo motor, connectors, usb cable and usb battery pac
 ## This is a difficult build and may need some adaptations for your project: For example we used a large print-bed 3D printer to make the 10.5 inch long frame (26.7 cm). You may choose to split that frame up or put the hardware somewhere else on the car.
 
 
-The software to use is online as part of my Arduino IDE ready, library the "[Portenta Pro Community Solutions](https://github.com/hpssjellis/portenta-pro-community-solutions)".  
+The software to use is online as part of my Arduino IDE ready library the "[Portenta Pro Community Solutions](https://github.com/hpssjellis/portenta-pro-community-solutions)". A huge library of ready made examples to use with the Arduino PortentaH7 and other Arduino MBED boards.
+
+<img src="../media/portenta-pro-community-solutions-library.png" width=700 />
+
 If you understand the referencing sytem it is in the "dot55" area.
 
 https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/examples/dot5-portenta-machine-learning/dot55-robocar
