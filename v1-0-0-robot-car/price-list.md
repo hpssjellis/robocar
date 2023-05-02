@@ -22,8 +22,8 @@ $189.99 CDN
 
 
 
-
-[https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png](https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png) only need 2 female bullet connectors this is a set of 50 for  $11.99 USD.  [Bullet Connector](https://www.amazon.com/AIRIC-Bullet-Connectors-Insulated-Terminals/dp/B08ZSQZCCR?th=1)
+<img src="https://user-images.githubusercontent.com/5605614/235745458-88ed048f-ff9d-4113-bc57-5134cd934e4b.png" width=300 />
+You only need 2 female bullet connectors this is a set of 50 for  $11.99 USD.  [Bullet Connector](https://www.amazon.com/AIRIC-Bullet-Connectors-Insulated-Terminals/dp/B08ZSQZCCR?th=1)
 
 # Note: 
 
