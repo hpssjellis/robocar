@@ -3,11 +3,12 @@
 Needs a big motor driver, servo motor, connectors, usb cable and usb battery pack, ability to 3D Print large objects. See [price-list.md](price-list.md)
 
 
+<img src="../media/my-car.jpg" width=700 />
 
 ## This is a difficult build and may need some adaptations for your project: For example we used a large print-bed 3D printer to make the 10.5 inch long frame (26.7 cm). You may choose to split that frame up or put the hardware somewhere else on the car.
 
 
-The software to use is online as part of my Arduino IDE ready, library the "Portenta Pro Community Solutions".  
+The software to use is online as part of my Arduino IDE ready, library the "[Portenta Pro Community Solutions](https://github.com/hpssjellis/portenta-pro-community-solutions)".  
 If you understand the referencing sytem it is in the "dot55" area.
 
 https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/examples/dot5-portenta-machine-learning/dot55-robocar
@@ -109,7 +110,7 @@ My students cars:
 
 <img src="../media/framepng.png" width=300 />
 <img src="../media/grayoled.png" width=300 />
-<img src="../media/my-car.jpg" width=300 />
+<img src="../media/my-car.jpg" width=700 />
 <img src="../media/shredder-diagram2.png" width=300 />
 <img src="../media/big-dc-motor-driver.png" width=300 />
 <img src="../media/" width=300 />
