@@ -33,7 +33,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
       6. [Arduino PortentaH7](https://store-usa.arduino.cc/products/portenta-h7)  $103.40 USD 
       7. [Arduino LoRa Vision Shield](https://store-usa.arduino.cc/products/arduino-portenta-vision-shield-lora%C2%AE) $63.25 USD
       8. [https://www.waveshare.com/1.5inch-oled-module.htm](https://www.waveshare.com/1.5inch-oled-module.htm) $12.99 USD
-      9. Will also need a usb-C cable, usb battery pack and a micro-sd card polarized sunglasses. A 3D printer might be useful
+      9. Will also need a usb-C cable, usb battery pack and a micro-sd card and polarized sunglasses. A 3D printer would be useful.
 
 3. Have fun with the RC car: Without breaking it, charge the battery and drive it around to test the tight turning circle diameter and slowest speeds that it still moves.
 4. Find objects to track: To train your model, you need to find objects to track. You can use double-sided black circles on photo copy paper and cut them out. [../media/eyes-pdf.pdf](../media/eyes-pdf.pdf)
