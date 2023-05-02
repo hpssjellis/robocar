@@ -110,6 +110,6 @@ My students cars:
 <img src="../media/framepng.png" width=300 />
 <img src="../media/grayoled.png" width=300 />
 <img src="../media/my-car.jpg" width=300 />
-<img src="../media/shredder-diagram.png" width=300 />
+<img src="../media/shredder-diagram2.png" width=300 />
 <img src="../media/big-dc-motor-driver.png" width=300 />
 <img src="../media/" width=300 />
