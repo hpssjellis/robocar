@@ -27,7 +27,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
 
       1. [RC-Pro SHREDDER](https://www.rcpro.ca/collections/shredder/products/shredder) $189.99 CDN  
       2. [WSD1302 plug set](https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/) 2 sets  $2.99 USD
-      2. [Bullet Connectors]([https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/](https://www.amazon.com/AIRIC-Bullet-Connectors-Insulated-Terminals/dp/B08ZSQZCCR?th=1)) only need 2 female bullet connectors this is a set of 50 for  $11.99 USD
+      2. [Bullet Connectors](https://www.amazon.com/AIRIC-Bullet-Connectors-Insulated-Terminals/dp/B08ZSQZCCR?th=1) only need 2 female bullet connectors this is a set of 50 for  $11.99 USD
       4. [Big VNH5019 Motor Driver Carrier](https://www.pololu.com/product/1451) $44.95 USD 
       5. [3 wire Servo ](https://www.rcpro.ca/collections/shredder/products/shredder-3-wires-19gram-metal-gear-servo)  $24.99 CDN
       6. [Arduino PortentaH7](https://store-usa.arduino.cc/products/portenta-h7)  $103.40 USD 
