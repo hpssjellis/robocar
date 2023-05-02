@@ -54,16 +54,62 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
 
 
 
-Mh students cars
+My students cars:
 
-<img src="../media/student-cars2.png" width=300 />
+<img src="../media/student-cars2.png" width=900 />
+
+
+[../media/a01-motor-testing.ino](../media/a01-motor-testing.ino)
+
+<img src="../media/ei-18-pen.png" width=300 />
+
+<img src="../media/ei01-login.png" width=300 />
+
+<img src="../media/ei02-create.png" width=300 />
+
+<img src="../media/ei03-bounding.png" width=300 />
+
+<img src="../media/ei04-fomo-bounding2.png" width=300 />
+
+<img src="../media/ei05-devices.png" width=300 />
+
+<img src="../media/ei06-collect.png" width=300 />
+
+<img src="../media/ei07-unlock.png" width=300 />
+
+<img src="../media/ei08-labels.png" width=300 />
+
+<img src="../media/ei09-second-label.png" width=300 />
+
+<img src="../media/ei10-edit-labels.png" width=300 />
+
+<img src="../media/ei11-design-impulse.png" width=300 />
+
+<img src="../media/ei12-save-paramters.png" width=300 />
+
+<img src="../media/ei13-gnerate-features.png" width=300 />
+
+<img src="../media/ei14-feature-explorer.png" width=300 />
+
+<img src="../media/ei15-transfer-learning.png" width=300 />
+
+<img src="../media/ei16-live-classification.png" width=300 />
+
+<img src="../media/ei17-cell-switch-to-classification.png" width=300 />
+
+<img src="../media/ei18-unknown.png" width=300 />
+
+<img src="../media/eix1-queue.png" width=300 />
+
+<img src="../media/eix2-bounding-draw.png" width=300 />
+
+<img src="../media/eixx-bounding-fomo.png" width=300 />
+
+<img src="../media/eyes.png" width=300 />
+
+<img src="../media/framepng.png" width=300 />
+<img src="../media/grayoled.png" width=300 />
+<img src="../media/my-car.jpg" width=300 />
+<img src="../media/shredder-diagram.png" width=300 />
 <img src="../media/" width=300 />
 <img src="../media/" width=300 />
-<img src="../media/" width=300 />
-<img src="../media/" width=300 />
-<img src="../media/" width=300 />
-
-
-
-
-
