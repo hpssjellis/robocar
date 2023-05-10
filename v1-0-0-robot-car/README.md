@@ -40,8 +40,8 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
 5. Build the car frame: <img src="../media/framepng.png" width=200 />    3D print the car frame using the provided STL files [../media/rc-Car-frame28-22degrees-V28-22-degrees.stl](../media/rc-Car-frame28-22degrees-V28-22-degrees.stl) or these smaller prints [../media/rc-Car-frame27-bread-front.stl](../media/rc-Car-frame27-bread-front.stl)   and [../media/rc-Car-frame27-bread-back.stl](../media/rc-Car-frame27-bread-back.stl) or make one with wood or cardboard. Make sure to attach the PortentaH7 with LoRa vision shield on the car along with a USB-C cable with a battery pack, and attach it to the car while it still has the RC components working. This allows you to drive the car while taking lots of images on the SD card. You will need this program [dot362-png-to-sd-card.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot3-portenta-vision-shields/dot36-camera-png-to-web/dot362-png-to-sd-card/dot362-png-to-sd-card.ino). Note line 75 ```int myDelay = 10000;``` sets a variable to take an image every 10 seconds. change that number to about 500 to take lots of .PNG pictures.  You might want to attach sunglasses to the model if reflections are a problem when using the car inside.
 
 5. Train the model: Upload the images to Edgeimpulse.com <img src="../media/edgeimpulse-upload-images.png" width=200 /> and train a FOMO model on EdgeImpulse.com, or grab the main one I use: [here ei-ei-v25-fomo-eyes-shades-arduino-1.0.2.zip](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/zipped-libraries/edge-Impulse/arduino-exported/Portenta-Camera/ei-ei-v25-fomo-eyes-shades-arduino-1.0.2.zip). The following steps to train the machine learning model are mirrored on this site with images at [https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/](https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/)
-      1. login or register for [Edgeimpulse.com](Edgeimpulse.com)
-      2. On the dashboard, go to the far right and change the label type from "one label" to "bounding boxes." This sets up the model for FOMO (faster objects, more objects) vision. Also set Target Device to "Arduino PortentaH7 (Cortex M7 480 MHz)" 
+      1. login or register for [Edgeimpulse.com](Edgeimpulse.com) <br> <img src="../media/ei01-login.png" width=300 /> <br> <img src="../media/ei02-create.png" width=300 />
+      2. On the dashboard, go to the far right and change the label type from "one label" to "bounding boxes." This sets up the model for FOMO (faster objects, more objects) vision. Also set Target Device to "Arduino PortentaH7 (Cortex M7 480 MHz)" <br> <img src="../media/ei03-bounding.png" width=300 /><br><img src="../media/ei04-fomo-bounding2.png" width=300 /><br>
       3. Use the menu connect devices and go to uploader and upload your images that you took of the car driving around your object to detect
       4. Go to menu item Data Aquisiton and click on the "Queue" and start drawing bounding boxes around your objects. "Make sure the label is the same for all of them I use "1eye". The number one in front is very important. 
       5. Once all images are labelled, create your standard FOMO model by clicking "create impulse" and choose the standard Edge Impulse image and object detection blocks. Check before saving the impulse that it has only one object.
@@ -49,7 +49,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
       6. In the "Image" menu item, click on "Generate Features" wait a few minutes to see the "Feature explorer". Check for weird images and delete or change them as needed.
       7. In the menuenu item "Object Detection" set number of training cycles to about 220 (or whatever works for your project). Add "Data Augmentation" and "start Training" takes about 8 minutes.  
       8. Check your F1 score and confusion matrix, which should be reasonably good hopefully above 80% for the background and the 1eye labelled object
-      9. Test the model on your phone or download it to the Arduino. Reminder this is an Arduino library so you will need to  upload it into the Arduino IDE as a zipped library.
+      9. Test the model on your phone or download it to the Arduino.<br> <img src="../media/ei-18-pen.png" width=300 /><br> Reminder this is an Arduino library so you will need to  upload it into the Arduino IDE as a zipped library.
       10. Check the library file name so you can change the library that is in the default program to the new name.
       11. Always place the car on a small box when testing it as it could jump off the table and break.
       12. Flash the code to the Portenta connected to your car. Make sure both batteries are charaged. 
@@ -57,7 +57,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
       14. Return to Edgeimpulse and try to improve your model.
 7. Download the exported Edgeimpulse arduino library and install the .zip file into the Arduino IDE (Sketch--> Include Library --> Add .ZIP Library). This is a long compile depending on your computer speed. Expect about 20 min for this to complete the first time, about 3 min each time after that. Just testing that this code compiles and can load onto the Portenta with vision shiled and a serial monitor output shows that it is working is a huge step. Well done if it works.
 8. Load the Arduino sketch [dot551-robocar-v1.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot5-portenta-machine-learning/dot55-robocar/dot551-robocar-v1/dot551-robocar-v1.ino) but loading it is easy from the Arduino IDE installed "Portenta Pro Community Solutions" library sketch dot551 (check for newer versions) as it will also load the included file ```#include "edge-impulse-advanced-v2.h"```. If you want you can manually load that included file from: [edge-impulse-advanced-v2.h](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot5-portenta-machine-learning/dot55-robocar/dot551-robocar-v1/edge-impulse-advanced-v2.h). It is just a way to get rid of the complex coding, so your main file only has the necessary code that you might want to change.
-9. If you have the WaveShare grayscale 128 x 128 OLED then attach the correct pins and run the code and observe your model if it works. This code [dot229-128x128-gray-oled.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot229-128x128-gray-oled/dot229-128x128-gray-oled.ino) can be used just to test the WaveShare OLED with the Portenta
+9. If you have the WaveShare grayscale 128 x 128 OLED then attach the correct pins ```  GRAYSCALE Waveshare OLED wire connections to the Portenta: , black GND, red 3v3, blue  DIN (mosi) D8, yellow (sck) D9 , orange (cs) D7, green (dc)  D6, white (reset) not needed ``` and run the code and observe your model if it works. This code [dot229-128x128-gray-oled.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot229-128x128-gray-oled/dot229-128x128-gray-oled.ino) can be used just to test the WaveShare OLED with the Portenta
 10. Remove the 5 wire servo that comes with the shredder car and attach the 3 wire servo. The ball joints are a bit difficult to replace. Test the servo Portenta connection with this code [dot221-servo.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot221-servo/dot221-servo.ino)
 11. Using a long breadboard attached to the car, connect the Big Motor Drive (Motor Driver test code [dot227-big-dc-motor-driver.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot227-big-dc-motor-driver/dot227-big-dc-motor-driver.ino) ) making sure the high car voltage is kept away from the 5 volt USB input Portenta
 12. A tricky part of the car build is getting the main battery power to the big motor driver and deciding on if the main battery is going to power the portenta. We tried step-down 5V regulators etc, but the Portenta seemed very sensitive to power fluctuations when the car was running so I just powered the Portenta with a 5V USB battery pack attached to the top of the breadboard. Your big motor driver will need connectors for both the main battery and the motor. See price list [price-list.md](price-list.md)
@@ -76,15 +76,15 @@ My students cars:
 <img src="../media/student-cars2.png" width=900 />
 
 
-[../media/a01-motor-testing.ino](../media/a01-motor-testing.ino)
 
-<img src="../media/ei-18-pen.png" width=300 />
 
-<img src="../media/ei01-login.png" width=300 />
 
-<img src="../media/ei02-create.png" width=300 />
 
-<img src="../media/ei03-bounding.png" width=300 />
+
+
+
+
+
 
 <img src="../media/ei04-fomo-bounding2.png" width=300 />
 
