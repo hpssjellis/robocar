@@ -49,7 +49,7 @@ https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/example
       6. In the "Image" menu item, click on "Generate Features" wait a few minutes to see the "Feature explorer". Check for weird images and delete or change them as needed.
       7. In the menuenu item "Object Detection" set number of training cycles to about 220 (or whatever works for your project). Add "Data Augmentation" and "start Training" takes about 8 minutes.  
       8. Check your F1 score and confusion matrix, which should be reasonably good hopefully above 80% for the background and the 1eye labelled object
-      9. Test the model on your phone or download it to the Arduino.<br> <img src="../media/ei-18-pen.png" width=300 /><br> Reminder this is an Arduino library so you will need to  upload it into the Arduino IDE as a zipped library.
+      9. Test the model on your phone or download it to the Arduino. Reminder this is an Arduino library so you will need to  upload it into the Arduino IDE as a zipped library.
       10. Check the library file name so you can change the library that is in the default program to the new name.
       11. Always place the car on a small box when testing it as it could jump off the table and break.
       12. Flash the code to the Portenta connected to your car. Make sure both batteries are charaged. 
@@ -78,54 +78,8 @@ My students cars:
 
 
 <br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 
 
-
-
-
-<img src="../media/ei05-devices.png" width=300 />
-
-<img src="../media/ei06-collect.png" width=300 />
-
-<img src="../media/ei07-unlock.png" width=300 />
-
-<img src="../media/ei08-labels.png" width=300 />
-
-<img src="../media/ei09-second-label.png" width=300 />
-
-<img src="../media/ei10-edit-labels.png" width=300 />
-
-<img src="../media/ei11-design-impulse.png" width=300 />
-
-<img src="../media/ei12-save-paramters.png" width=300 />
-
-<img src="../media/ei13-gnerate-features.png" width=300 />
-
-<img src="../media/ei14-feature-explorer.png" width=300 />
-
-<img src="../media/ei15-transfer-learning.png" width=300 />
-
-<img src="../media/ei16-live-classification.png" width=300 />
-
-<img src="../media/ei17-cell-switch-to-classification.png" width=300 />
-
-<img src="../media/ei18-unknown.png" width=300 />
-
-
-
-
-
-<img src="../media/eixx-bounding-fomo.png" width=300 />
-
-<img src="../media/eyes.png" width=300 />
-
-<img src="../media/framepng.png" width=300 />
-<img src="../media/grayoled.png" width=300 />
-<img src="../media/my-car.jpg" width=700 />
-
-
-<img src="../media/" width=300 />
