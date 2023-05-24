@@ -1,6 +1,20 @@
 
+BLOG POST
+
 # Shredder RoboCar with the Arduino PortentaH7 and Vision Shield.
-Needs a big motor driver, servo motor, connectors, usb cable and usb battery pack, ability to 3D Print large objects. See [price-list.md](price-list.md)
+
+## TINYML, MACHINE LEARNING, EMBEDDED DEVICES
+
+Jeremy Ellis
+
+May 30, 2023
+
+
+I wanted a long term project for students willing to do extra work and interested in both Arduino and Vision Machine Learning. Taking an RC car and turning it into a roboCar with vision self driving was the answer. This high level, long term project is great for students who want a harder than normal challenge.
+
+
+
+We picked a certain RC car "Shredder" that did not use a brushless motor as the programming of brushless motors has extra complexity. We also needed a big motor driver, a servo motor, connectors, usb cable and usb battery pack, as well as thew ability to 3D Print large objects. See [price-list.md](price-list.md)
 
 
 <img src="../media/my-car.jpg" width=700 />
