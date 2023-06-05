@@ -3,7 +3,7 @@ BLOG POST
 
 # Shredder RoboCar with the Arduino PortentaH7 and Vision Shield.
 
-## TINYML, MACHINE LEARNING, EMBEDDED DEVICES
+## TINYML, MACHINE LEARNING, EMBEDDED DEVICES, ARDUINO PORTENTAH7
 
 Jeremy Ellis
 
