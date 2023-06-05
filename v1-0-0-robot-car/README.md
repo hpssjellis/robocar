@@ -10,7 +10,7 @@ Jeremy Ellis
 May 30, 2023
 
 
-I wanted a long-term project for students willing to do extra work and interested in both Arduino and Vision Machine Learning. Taking an RC car and turning it into a roboCar with vision self-driving was the answer. This high-level, long-term project is great for students who want a harder-than-normal challenge.
+I wanted a long-term project for students willing to do extra work and interested in both Arduino microcontrollers and Vision Machine Learning. We took an RC car and converted it to be controlled by the Arduino PortentaH7 and then trained a FOMO Vision [EdgeImpulse.com](https://www.edgeimpulse.com/) model to create a self-driving RoboCar. This high-level, long-term project is great for students who want a harder-than-normal challenge.
 
 
 
