@@ -26,9 +26,7 @@ The software to use is online as part of my Arduino IDE ready library the "[Port
 
 <img src="../media/portenta-pro-community-solutions-library.png" width=700 />
 
-The library is so big I had to make a reference system to find examples. The RoboCar code examples are in the "dot55" area.
 
-https://github.com/hpssjellis/portenta-pro-community-solutions/tree/main/examples/dot5-portenta-machine-learning/dot55-robocar
 
 
 
