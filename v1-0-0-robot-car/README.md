@@ -14,7 +14,7 @@ I wanted a long-term project for students willing to do extra work and intereste
 
 
 
-We picked a certain RC car "Shredder" that did not use a brushless motor as the programming of brushless motors has extra complexity. We also needed a big motor driver, a servo motor, connectors, USB cable and USB battery pack, as well as the ability to 3D Print large objects. See [price-list.md](price-list.md)
+We picked a certain RC car "[RC Pro Shredder](https://bchobbies.com/products/shredder112scale4wdbrushedmonstertruck)" that did not use a brushless motor as the programming of brushless motors has extra complexity. We also needed a big motor driver, a servo motor, connectors, USB cable and USB battery pack, as well as the ability to 3D Print large objects. See [price-list.md](price-list.md)
 
 
 <img src="../media/my-car.jpg" width=700 />
