@@ -90,7 +90,7 @@ My student's cars:
 
 # Conclusion
 
-I hope you enjoyed this difficult project, it involved Arduino maker connections to a DC motor and Servo motor with Machine Learning using edgeimpulse.com and problem-solving to improve the Vision FOMO model. When you have the working car students can start making extensions, such as lighting and battery monitoring, including adaptions for if the car loses the trail. Good luck and I hope you had fun.
+I hope you enjoyed this difficult project, it involved Arduino maker connections to a DC motor and Servo motor with Machine Learning using edgeimpulse.com and problem-solving to improve the Vision FOMO model. When you have the roboCar working, students can start making extensions, such as lighting and battery monitoring, including adaptions for if the car loses the trail. Good luck and I hope you had fun.
 <br>
 
 
