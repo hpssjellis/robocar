@@ -69,28 +69,32 @@ The software to use is online as part of my Arduino IDE ready library the "[Port
       14. Return to Edgeimpulse and try to improve your model.
 7. Download the exported Edgeimpulse arduino library and install the .zip file into the Arduino IDE (Sketch--> Include Library --> Add .ZIP Library). This is a long compile depending on your computer speed. Expect about 20 min for this to complete the first time, about 3 min each time after that. Just testing that this code compiles and can load onto the Portenta with vision shield and a serial monitor output shows that it is working is a huge step. Well done if it works.
 8. Load the Arduino sketch [dot551-robocar-v1.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot5-portenta-machine-learning/dot55-robocar/dot551-robocar-v1/dot551-robocar-v1.ino) but loading it is easy from the Arduino IDE installed "Portenta Pro Community Solutions" library sketch dot551 (check for newer versions) as it will also load the included file ```#include "edge-impulse-advanced-v2.h"```. If you want you can manually load that included file from: [edge-impulse-advanced-v2.h](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot5-portenta-machine-learning/dot55-robocar/dot551-robocar-v1/edge-impulse-advanced-v2.h). It is just a way to get rid of the complex coding, so your main file only has the necessary code that you might want to change.
-9. If you have the WaveShare grayscale 128 x 128 OLED then attach the correct pins to the Portenta: <span style="color:blue">
+9. If you have the WaveShare grayscale 128 x 128 OLED then attach the correct pins to the Portenta: 
   * black to GND, 
   * red to 3v3, 
   * blue DIN (mosi) to D8, 
   * yellow (sck) to D9, 
   * orange (cs) to D7, 
   * green (dc) to D6, 
-  * white (reset) not needed  </span>
-and run the code and observe your model if it works. This code [dot229-128x128-gray-oled.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot229-128x128-gray-oled/dot229-128x128-gray-oled.ino) can be used just to test the WaveShare OLED with the Portenta
+  * white (reset) not needed  
+<br>and run the code and observe your model if it works. This code [dot229-128x128-gray-oled.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot229-128x128-gray-oled/dot229-128x128-gray-oled.ino) can be used just to test the WaveShare OLED with the Portenta
 11. Remove the 5 wire servo that comes with the shredder car and attach the 3 wire servo. The ball joints are a bit difficult to replace. Test the servo Portenta connection with this code [dot221-servo.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot221-servo/dot221-servo.ino)   The connections are:    
    * servo red to 6V battery positive
    * servo ground (brown or black) to 6V battery negative
    * servo ground (brown or black) to board GND
    * servo controller (orange or the other color) to board PWM pin D2   
 Here is an image of the entire wiring diagram  <br><img src="../media/shredder-diagram2.png" width=300 />
-12. Using a long breadboard attached to the car, connect the Big Motor Drive (Motor Driver test code [dot227-big-dc-motor-driver.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot227-big-dc-motor-driver/dot227-big-dc-motor-driver.ino) )  <br><img src="../media/big-dc-motor-driver.png" width=300 /><br> Make sure the high car voltage is kept away from the 5 volt USB input for the Portenta.
-13. A tricky part of the car build is getting the main battery power to the big motor driver and deciding on if the main battery is going to power the portenta. We tried step-down 5V regulators etc, but the Portenta seemed very sensitive to power fluctuations when the car was running so I just powered the Portenta with a 5V USB battery pack attached to the top of the breadboard. Your big motor driver will need connectors for both the main battery and the motor. See price list [price-list.md](price-list.md)
-14. Test that the mechanical parts of the car are working by running this test code which puts together both the servo and big motor driver: [here ../media/a01-motor-testing.ino](../media/a01-motor-testing.ino). This allows you to check the motor slowest speed and best full turning angle. (Don't push the angles too far as the servo motor complains)
-15. Once everything is proven to work, upload the main code again, change a few of the variables such as PWM_MIN and maximum turning angles, and try out your car
-16. Start editing the code to make it work better
-17. Also edit the 3D Printing to add lights, etc.
-18. Share your code on social media and link to twitter @rocksetta 
+12. Using a long breadboard attached to the car, connect the Big Motor Drive (Motor Driver test code [dot227-big-dc-motor-driver.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot227-big-dc-motor-driver/dot227-big-dc-motor-driver.ino) ) See image for pin connections:
+  *  Left side of Big Motor Driver board in order from the top (see diagram): D3 - D4 - - D5  3V3  GND - - 
+  *  Right side of Big Motor Driver board in order from the top (see diagram): OutA, OutB to the motor on the Shredder using the [Bullet-Connectors](https://www.amazon.com/AIRIC-Bullet-Connectors-Insulated-Terminals/dp/B08ZSQZCCR?th=1)
+  *  Right side of Big Motor Driver board in order from the top (see diagram): GND, VIN to the 7.4 V battery on the Shredder using the [ws-deans-2-pin-ultra-plug](https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/)  
+<br><img src="../media/big-dc-motor-driver.png" width=300 /><br> Make sure the high car voltage is kept away from the 5 volt USB input for the Portenta.
+14. A tricky part of the car build is getting the main battery power to the big motor driver and deciding on if the main battery is going to power the portenta. We tried step-down 5V regulators etc, but the Portenta seemed very sensitive to power fluctuations when the car was running so I just powered the Portenta with a 5V USB battery pack attached to the top of the breadboard. Your big motor driver will need connectors for both the main battery and the motor. See price list [price-list.md](price-list.md)
+15. Test that the mechanical parts of the car are working by running this test code which puts together both the servo and big motor driver: [here ../media/a01-motor-testing.ino](../media/a01-motor-testing.ino). This allows you to check the motor slowest speed and best full turning angle. (Don't push the angles too far as the servo motor complains)
+16. Once everything is proven to work, upload the main code again, change a few of the variables such as PWM_MIN and maximum turning angles, and try out your car
+17. Start editing the code to make it work better
+18. Also edit the 3D Printing to add lights, etc.
+19. Share your code on social media and link to twitter @rocksetta 
  
 
 
