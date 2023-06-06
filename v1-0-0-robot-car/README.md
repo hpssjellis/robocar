@@ -78,13 +78,13 @@ The software to use is online as part of my Arduino IDE ready library the "[Port
   * green (dc) to D6, 
   * white (reset) not needed  
 <br>and run the code and observe your model if it works. This code [dot229-128x128-gray-oled.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot229-128x128-gray-oled/dot229-128x128-gray-oled.ino) can be used just to test the WaveShare OLED with the Portenta
-11. Remove the 5 wire servo that comes with the shredder car and attach the 3 wire servo. The ball joints are a bit difficult to replace. Test the servo Portenta connection with this code [dot221-servo.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot221-servo/dot221-servo.ino)   The connections are:    
+10. Remove the 5 wire servo that comes with the shredder car and attach the 3 wire servo. The ball joints are a bit difficult to replace. Test the servo Portenta connection with this code [dot221-servo.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot221-servo/dot221-servo.ino)   The connections are:    
    * servo red to 6V battery positive
    * servo ground (brown or black) to 6V battery negative
    * servo ground (brown or black) to board GND
    * servo controller (orange or the other color) to board PWM pin D2   
 Here is an image of the entire wiring diagram  <br><img src="../media/shredder-diagram2.png" width=300 />
-12. Using a long breadboard attached to the car, connect the Big Motor Drive (Motor Driver test code [dot227-big-dc-motor-driver.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot227-big-dc-motor-driver/dot227-big-dc-motor-driver.ino) ) See image for pin connections:
+10. Using a long breadboard attached to the car, connect the Big Motor Drive (Motor Driver test code [dot227-big-dc-motor-driver.ino](https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot227-big-dc-motor-driver/dot227-big-dc-motor-driver.ino) ) See image for pin connections:
   *  Left side of Big Motor Driver board in order from the top (see diagram): D3 - D4 - - D5  3V3  GND - - 
   *  Right side of Big Motor Driver board in order from the top (see diagram): OutA, OutB to the motor on the Shredder using the [Bullet-Connectors](https://www.amazon.com/AIRIC-Bullet-Connectors-Insulated-Terminals/dp/B08ZSQZCCR?th=1)
   *  Right side of Big Motor Driver board in order from the top (see diagram): GND, VIN to the 7.4 V battery on the Shredder using the [ws-deans-2-pin-ultra-plug](https://www.rcsuperstore.com/ws-deans-2-pin-ultra-plug-set-one-male-one-female-included/)  
