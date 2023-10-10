@@ -5,7 +5,7 @@ Shredder Robot Toy Car Arduino hacked for machine learning with the PortentaH7 a
 
 Started Feb 12th, 2023
 
-
+Edgeimpulse Blog about version 1 here  https://docs.edgeimpulse.com/experts/image-projects/arduino-portenta-h7-self-driving-rc-car
 
 Code should end up here in this folder of my Arduino Library the Portenta Pro Community Solutions.  
 If you understand the referencing sytem it is in the "dot55" area.
