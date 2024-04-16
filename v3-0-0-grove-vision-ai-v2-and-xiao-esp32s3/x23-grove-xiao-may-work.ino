@@ -140,7 +140,7 @@ void loop(){
             Serial.println(" Right ");
             myServoDegrees = myMaxServo; // turn Right
       }
-      else if(myIntAverageX >= 90 && AI.boxes()[0].x <= 120 ){
+      else if(myIntAverageX >= 90 && myIntAverageX <= 120 ){
 
             Serial.print(" Center ");
             myServoDegrees = 90; // turn center
