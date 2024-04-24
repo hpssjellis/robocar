@@ -1,0 +1,165 @@
+/*
+ * Connections XIAO-esp32s3 to Grove Vision AI V2 
+ * GND to GND
+ * 3V3 to 3V3
+ * SDA (D4) to SDA grove
+ * SCL (D5) to SCL Grove
+ * 
+ * 
+ * Coonections XIAO-esp32S3 to Servo
+ * D2 to Orange wire
+ * 
+ * Connections XIAO-esp32S3 to Big Motor Driver Pololu 1451 VNH5019
+ * https://github.com/hpssjellis/maker100-eco/blob/main/media/b-b-g-big-dc-motor-driver.png
+ * GND to top left 1   Digital turn
+ * D0 to top left 3    PWM motor speed
+ * 3V3 to top left 6   Digital turn
+ * 3V3 to top left 7
+ * GND to top left 8
+ * 
+ * 
+ * Do not use D3 and D6 on XIAO as they are part of the Grove communication
+ * 
+ */
+
+
+#include <Arduino.h>
+#include <Seeed_Arduino_SSCMA.h>
+#include <ESP32Servo.h>   // for XIAO-ESP32S3-Sense
+
+
+TaskHandle_t myTaskHandle = NULL;
+//int myPWMSpeed = 0; // Global variable to store PWM speed
+
+
+// Global Variables
+SSCMA AI;
+Servo myServo_D2;
+int myLowestSpeed = 53;        //  was 60;  37;   // slowest speed that the car moves on a charged battery. Typically between about 20 and 50 depending on your DC motor  (It will "hum" if not enough)
+int myChosenSpeed = 0;         // speed the car should be going
+int myOldChosenSpeed = 0;         // speed the car should be going
+
+int myAngle = 0;
+int myOldAngle = 0;
+
+int myDrivePwmPin = D0;        // PWM pin for the big motor driver.
+//int myMultipleObjects = 0;     // zero the object count
+//int myObjectMax = 5;           // maximum number of objects to increase speed
+//int mySpeedMultiplier =  3;   // object speed mulitplier
+int myMotorDelay  =   200;     // was 30 was 150;  delay makes motor respond longer, but try to match classification
+
+void myTask(void *parameter) {
+  while (true) {
+
+   if (myOldChosenSpeed != myChosenSpeed){   // if speed changed
+      myOldChosenSpeed = myChosenSpeed;
+      if (myChosenSpeed > 255){myChosenSpeed = 255;}
+      if (myChosenSpeed < 0){myChosenSpeed = 0;}
+    //  if (myMultipleObjects > myObjectMax){  myMultipleObjects = myObjectMax; }
+    //  if (myMultipleObjects > 1){ myChosenSpeed = myChosenSpeed + ( myMultipleObjects * mySpeedMultiplier );  }  // make it go faster if it sees multiple objects
+      
+                               
+      Serial.print(" Speed:");
+      Serial.print(myChosenSpeed);
+
+   }
+    
+
+   if (myOldAngle != myAngle){
+
+      // checks needed here
+      myServo_D2.write(myAngle); // turn Right 
+    
+      myOldAngle = myAngle;
+    }
+
+      
+     delay(myMotorDelay);  // just to give the motor a bit of time to react
+  }
+}
+
+
+void setup(){
+    Serial.begin(115200);
+  
+    pinMode(myDrivePwmPin, OUTPUT);   // PWM 0 to 255
+    
+    myServo_D2.attach(D2); // D2 should do PWM on XIOA
+    // note the two drive pins on the big motor driver are just connected to GND and 3V3 respectively.
+
+
+
+
+
+    // Grove Vision AI V2 and zero at least one value
+    
+    AI.begin();
+    xTaskCreatePinnedToCore(
+      myTask,         // Function to be executed
+      "MyTask",       // Name of the task
+      2048,           // Stack size in words
+      NULL,           // Task input parameter
+      1,              // Priority of the task
+      &myTaskHandle,  // Task handle
+      0               // Core where the task should run
+  );
+
+}
+
+void loop(){
+    if (!AI.invoke() ){
+  
+     AI.perf().prepocess;
+     AI.perf().inference;
+     AI.perf().postprocess;
+
+
+ 
+     Serial.println();    
+     if (AI.boxes()[0].score > 85 ){
+      //  myMultipleObjects = 0;
+        Serial.print(" Score[0]:"); 
+        Serial.print(String(AI.boxes()[0].score)+", ");
+       // analogWrite(myDrivePwmPin, myLowestSpeed);   // go medium  
+        myChosenSpeed = myLowestSpeed;
+      //  myMultipleObjects = AI.boxes().size();
+       // if (myMultipleObjects > 1){
+      //     Serial.print(" Multiple objects: " + String(myMultipleObjects));
+     // }
+      // 320 x 320 width and height 
+      if( AI.boxes()[0].x < 120){
+            Serial.println(" Right ");
+            myAngle = 127;
+           // myServo_D2.write(127); // turn Right
+      }
+      else if(AI.boxes()[0].x >= 120 && AI.boxes()[0].x <= 140 ){
+
+            Serial.print(" Center ");
+            myAngle = 90;
+         //   myServo_D2.write(90); // turn center
+      }
+
+      else if (AI.boxes()[0].x > 140) {
+            Serial.print(" Left ");
+            myAngle = 53;
+          //  myServo_D2.write(53); // turn left
+      }
+
+     }
+      else {
+        Serial.print(" Score[0]:");        
+        Serial.print(AI.boxes()[0].score);
+        Serial.print(",  None ");
+      //  analogWrite(myDrivePwmPin, 0);   // No objects detected so stop
+        myChosenSpeed = 0;   // stop the car!
+      // I don't like the delay here so I tried to run the motor in it's own thread
+       // delay(500);   //  hmmmm  does not feel like the correct way to deal with this.
+      }
+
+     AI.boxes()[0].score = 0;  // pre-zero the score for next loop
+     AI.boxes().clear();
+
+
+    }
+
+}
