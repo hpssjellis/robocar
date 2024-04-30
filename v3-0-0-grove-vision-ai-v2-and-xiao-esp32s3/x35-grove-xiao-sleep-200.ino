@@ -46,7 +46,7 @@ int myDrivePwmPin = D0;        // PWM pin for the big motor driver.
 //int myMultipleObjects = 0;     // zero the object count
 int myObjectMax = 5;           // maximum number of objects to increase speed
 int mySpeedMultiplier =  3;   // object speed mulitplier
-int myMotorDelay  =   200;     // was 30 was 150;  delay makes motor respond longer, but try to match classification
+int myMotorDelay  =   20;     // was 30 was 150;  delay makes motor respond longer, but try to match classification
 
 void myTask(void *parameter) {
   while (true) {
@@ -127,7 +127,7 @@ void loop(){
 
       // 320 x 320 width and height 
        if( AI.boxes()[0].x < 120){
-            Serial.println(" Right ");
+            Serial.print(" Right ");
             myAngle = 127;
            // myServo_D2.write(127); // turn Right
        }
