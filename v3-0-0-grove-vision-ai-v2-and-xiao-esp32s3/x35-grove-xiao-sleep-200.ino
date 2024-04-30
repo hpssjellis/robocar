@@ -59,7 +59,7 @@ void myTask(void *parameter) {
       analogWrite(myDrivePwmPin, myChosenSpeed);                         
       Serial.print(".");   // signal speed change
       
-      vTaskDelay(pdMS_TO_TICKS(myMotorDelay));   
+ 
 
    }
     
@@ -68,18 +68,18 @@ void myTask(void *parameter) {
      if (myAngle > 127) {myAngle = 127;}
      if (myAngle < 53) {myAngle = 53;}
 
-      myServo_D2.write(myAngle); // turn Right 
+      myServo_D2.write(myAngle); // turn  
     
       myOldAngle = myAngle;
 
       Serial.print("|");  //signal turn change
       
-      vTaskDelay(pdMS_TO_TICKS(myMotorDelay));   
+
      // while(Serial.available() > 0) {   // clear serial buffer
      //    char t = Serial.read();
      // }
     }
- 
+       vTaskDelay(pdMS_TO_TICKS(myMotorDelay));   
    //  delay(myMotorDelay);  // just to give the motor a bit of time to react
   }
 }
