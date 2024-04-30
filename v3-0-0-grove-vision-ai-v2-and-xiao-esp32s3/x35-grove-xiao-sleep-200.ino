@@ -46,7 +46,7 @@ int myDrivePwmPin = D0;        // PWM pin for the big motor driver.
 //int myMultipleObjects = 0;     // zero the object count
 int myObjectMax = 5;           // maximum number of objects to increase speed
 int mySpeedMultiplier =  3;   // object speed mulitplier
-int myMotorDelay  =   20;     // was 30 was 150;  delay makes motor respond longer, but try to match classification
+int myMotorDelay  =   500;     // was 30 was 150;  delay makes motor respond longer, but try to match classification
 
 void myTask(void *parameter) {
   while (true) {
@@ -73,13 +73,13 @@ void myTask(void *parameter) {
       myOldAngle = myAngle;
 
       Serial.print("|");  //signal turn change
-      
+      vTaskDelay(pdMS_TO_TICKS(myMotorDelay));      
 
      // while(Serial.available() > 0) {   // clear serial buffer
      //    char t = Serial.read();
      // }
     }
-       vTaskDelay(pdMS_TO_TICKS(myMotorDelay));   
+
    //  delay(myMotorDelay);  // just to give the motor a bit of time to react
   }
 }
