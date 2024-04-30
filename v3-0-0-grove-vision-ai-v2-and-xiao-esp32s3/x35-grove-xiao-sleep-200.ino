@@ -72,7 +72,7 @@ void myTask(void *parameter) {
     
       myOldAngle = myAngle;
 
-      Serial.print("|");  signal turn change
+      Serial.print("|");  //signal turn change
       
       vTaskDelay(pdMS_TO_TICKS(myMotorDelay));   
      // while(Serial.available() > 0) {   // clear serial buffer
