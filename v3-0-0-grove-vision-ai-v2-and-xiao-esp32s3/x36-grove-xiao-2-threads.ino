@@ -46,8 +46,8 @@ int myDrivePwmPin = D0;          // PWM pin for the big motor driver.
 //int myMultipleObjects = 0;     // zero the object count
 int myObjectMax = 5;             // maximum number of objects to increase speed
 int mySpeedMultiplier =  3;      // object speed mulitplier
-int myMotorDelay  =   130;        // was 200
-int myTurnDelay  =   300;         // was 200
+int myMotorDelay  =   80;        // was 200
+int myTurnDelay  =   200;         // was 200
 
 void myMotorTask(void *parameter) {
   while (true) {
