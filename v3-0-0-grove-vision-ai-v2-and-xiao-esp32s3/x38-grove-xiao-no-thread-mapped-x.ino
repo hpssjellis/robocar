@@ -30,7 +30,7 @@
 SSCMA AI;
 Servo myServo_D2;
 int myDrivePwmPin = D0;
-int mySetSpeed = 53;   // slowest speed that the car moves on a charged battery
+int mySlowestSpeed = 53;   // slowest speed that the car moves on a charged battery
 int myMainSpeed = 0;  
 int myOldSpeed = 0;   
 
@@ -51,7 +51,7 @@ void setup(){
     // note the two drive pins on the big motor driver are just connected to GND and 3V3 respectively.
     
    // test motors
-    analogWrite(myDrivePwmPin, myLowestSpeed); // slowest speed motor test
+    analogWrite(myDrivePwmPin, mySlowestSpeed); // slowest speed motor test
     myServo_D2.write(myMinAngle);
     delay(500);                                // wait a bit
     analogWrite(myDrivePwmPin, 0);             // stop motor
@@ -89,7 +89,7 @@ void loop(){
 
 
       Serial.print(" score:"+String(AI.boxes()[0].score) + ", x:" + String(AI.boxes()[0].x) + ", map:" + String(myMappedAngle) );
-      myMainSpeed = mySetSpeed;
+      myMainSpeed = mySlowestSpeed;
       
      } else {
         Serial.print(String( AI.boxes()[0].score)+", None");
