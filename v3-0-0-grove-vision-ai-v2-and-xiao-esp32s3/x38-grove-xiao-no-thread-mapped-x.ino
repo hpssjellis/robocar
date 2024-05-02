@@ -65,18 +65,18 @@ void loop(){
      Serial.println();
      if (AI.boxes()[0].score > 85 ){
       
-      myMappedAngle = map(AI.boxes()[0].x, myRealMinX, myRealMaxX, myMinAngle, myMaxAngle); // x location to angle  
+      myMappedAngle = map(AI.boxes()[0].x, myRealMinX, myRealMaxX, myMaxAngle, myMinAngle); // x location to angle note reverse numbers 
           
       if (myOldMappedAngle < myMappedAngle - myAngleChange ){
            myOldMappedAngle += myAngleChange;    
            if (myOldMappedAngle > myMaxAngle){myOldMappedAngle = myMaxAngle;}  // protect from maxTurn
            myServo_D2.write(myOldMappedAngle);                   // turn towards new bigger angle
-          Serial.println(" +");   
+          Serial.println(" >");   
       } else if (myOldMappedAngle > myMappedAngle + myAngleChange ){
          myOldMappedAngle -= myAngleChange;
          if (myOldMappedAngle < myMinAngle){myOldMappedAngle = myMinAngle;}      // protect from minimum turn
          myServo_D2.write(myOldMappedAngle - 5);                 // turn towards new smaller angle
-         Serial.println(" -");  
+         Serial.println(" <");  
       }  // note: angles  myAngleChange < oldmapped < myAngleChange should not change servo at all
 
 
