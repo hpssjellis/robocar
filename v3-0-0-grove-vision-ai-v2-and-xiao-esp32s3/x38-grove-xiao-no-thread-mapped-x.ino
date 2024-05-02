@@ -30,13 +30,13 @@
 SSCMA AI;
 Servo myServo_D2;
 int myDrivePwmPin = D0;
-int mySetSpeed = 37;   // slowest speed that the car moves on a charged battery
-int myMainSpeed = 37;   // slowest speed that the car moves on a charged battery
-int myOldSpeed = 0;   // slowest speed that the car moves on a charged battery
+int mySetSpeed = 53;   // slowest speed that the car moves on a charged battery
+int myMainSpeed = 0;  
+int myOldSpeed = 0;   
 
 int myMappedAngle = 0;
 int myOldMappedAngle = 0;
-int myAngleChange = 5;  // the degrees the servfo will move each time it moves
+int myAngleChange = 9;  // was 5 the degrees the servfo will move each time it moves
 int myMaxAngle = 127;    // max right turn on my car
 int myMinAngle = 53;     // max left turn on my car
 int myRealMinX = 30;     // Should be 0 but is the lowest x reading your vision model gets
@@ -49,7 +49,15 @@ void setup(){
     pinMode(myDrivePwmPin, OUTPUT);   // PWM 0 to 255
     myServo_D2.attach(D2); // D2 should do PWM on XIOA
     // note the two drive pins on the big motor driver are just connected to GND and 3V3 respectively.
-
+    
+   // test motors
+    analogWrite(myDrivePwmPin, myLowestSpeed); // slowest speed motor test
+    myServo_D2.write(myMinAngle);
+    delay(500);                                // wait a bit
+    analogWrite(myDrivePwmPin, 0);             // stop motor
+    myServo_D2.write(myMaxAngle);
+    delay(500);       
+     
     // Grove Vision AI V2 and zero at least one value
     AI.begin();
 
