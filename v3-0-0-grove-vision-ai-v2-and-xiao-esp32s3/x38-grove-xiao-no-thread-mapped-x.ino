@@ -38,7 +38,7 @@ int myMappedAngle = 0;
 int myOldMappedAngle = 0;
 int myAngleChange = 5;  // the degrees the servfo will move each time it moves
 int myMaxAngle = 127    // max right turn on my car
-int myMinAngle = 53     // max left turn on my car
+int myMinAngle = 53;     // max left turn on my car
 int myRealMinX = 30;     // Should be 0 but is the lowest x reading your vision model gets
 int myRealMaxX = 210    // should be 320 but is the real max reading your vision model gets
 
@@ -65,7 +65,8 @@ void loop(){
      Serial.println();
      if (AI.boxes()[0].score > 85 ){
       
-      myMappedAngle = map(AI.boxes()[0].x, 0, 320, myMinAngle, myMaxAngle); // x location to angle      
+      myMappedAngle = map(AI.boxes()[0].x, myRealMinX, myRealMaxX, myMinAngle, myMaxAngle); // x location to angle  
+          
       if (myOldMappedAngle < myMappedAngle - myAngleChange ){
            myOldMappedAngle += myAngleChange;    
            if (myOldMappedAngle > myMaxAngle){myOldMappedAngle = myMaxAngle;}  // protect from maxTurn
