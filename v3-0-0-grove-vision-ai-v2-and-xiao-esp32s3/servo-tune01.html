@@ -1,0 +1,36 @@
+#include <ESP32Servo.h>
+
+Servo myServo;  // Create a servo object
+
+void setup() {
+  Serial.begin(115200);
+  // Initialize servo
+  myServo.setPeriodHertz(50);  // Servo frequency of 50 Hz
+  int myMinPulse = 500;  // Minimum pulse width in microseconds
+  int myMaxPulse = 2500; // Maximum pulse width in microseconds
+
+  // Attach servo signal to pin 18 with specific min and max pulse widths
+  myServo.attach(18, myMinPulse, myMaxPulse);
+  delay(2000);
+  
+  // Sweep the servo from 0 to 180 degrees
+  for (int pos = 0; pos <= 180; pos++) {
+    myServo.write(pos);
+    delay(15);  // Wait 15ms between each position
+  }
+
+  // Sweep the servo from 180 to 0 degrees
+  for (int pos = 180; pos >= 0; pos--) {
+    myServo.write(pos);
+    delay(15);
+  }
+  
+}
+
+void loop() {
+
+  
+
+
+    
+}
