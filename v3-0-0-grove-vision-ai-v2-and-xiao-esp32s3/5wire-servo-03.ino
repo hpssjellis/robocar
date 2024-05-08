@@ -77,7 +77,7 @@ void loop() {
 // Function to turn the motor to the desired potentiometer position
 void turnMotorToPosition(int desiredPosition) {
 
-/*
+
   while (abs(currentPosition - desiredPosition) > 10) { // Allow a tolerance of 10 units
     if (currentPosition < desiredPosition) {
       digitalWrite(myMotorDirPin, HIGH); // Set motor direction forward
@@ -90,7 +90,7 @@ void turnMotorToPosition(int desiredPosition) {
     currentPosition = analogRead(myPotPin); // Update the potentiometer reading
   }
 
-*/
+
   
   analogWrite(myMotorPin, 0); // Stop the motor when position is reached
   Serial.print("Position reached: ");
