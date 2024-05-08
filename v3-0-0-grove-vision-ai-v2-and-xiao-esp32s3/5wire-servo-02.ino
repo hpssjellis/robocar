@@ -13,6 +13,9 @@
 // yellow A0
 // brown GND
 
+
+
+Note: the potentiometer goes from 0 to 4095
 */
 
 #include <Arduino.h>
@@ -21,6 +24,9 @@
 const int myPotPin = A2;  // Analog pin for the potentiometer
 const int myMotorDirPin = A1;  // Digital pin for DC motor direction
 const int myMotorPin = A3; // PWM pin for the motor
+  int currentPosition = 0;
+
+
 
 void setup() {
   pinMode(myMotorPin, OUTPUT);
@@ -30,23 +36,26 @@ void setup() {
 
 void loop() {
   // Example usage: Turn motor to position 512
-  turnMotorToPosition(512);     // need to find out if this is near the middle
+  turnMotorToPosition(2000);     // need to find out if this is near the middle
   delay(2000); // Delay to see the changes, not needed in actual use
-  turnMotorToPosition(450);    
+  turnMotorToPosition(1800);    
   delay(2000); 
-  turnMotorToPosition(570);     
-  delay(5000); 
+  turnMotorToPosition(2200);     
+  delay(5000);   
+  currentPosition = analogRead(myPotPin); // Read the current position from the potentiometer
+  Serial.println(currentPosition);
+}
 
 // Function to turn the motor to the desired potentiometer position
 void turnMotorToPosition(int desiredPosition) {
-  int currentPosition = analogRead(myPotPin); // Read the current position from the potentiometer
+
   while (abs(currentPosition - desiredPosition) > 10) { // Allow a tolerance of 10 units
     if (currentPosition < desiredPosition) {
       digitalWrite(myMotorDirPin, HIGH); // Set motor direction forward
-      analogWrite(myMotorPin, 128); // Adjust PWM value for speed
+      analogWrite(myMotorPin, 50); // Adjust PWM value for speed
     } else {
       digitalWrite(myMotorDirPin, LOW); // Set motor direction reverse
-      analogWrite(myMotorPin, 128); // Keep same speed, change direction
+      analogWrite(myMotorPin, 50); // Keep same speed, change direction
     }
     delay(100); // Short delay to allow the motor to move.   need to see how short this can be.
     currentPosition = analogRead(myPotPin); // Update the potentiometer reading
