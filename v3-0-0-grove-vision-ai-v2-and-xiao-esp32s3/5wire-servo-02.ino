@@ -1,8 +1,19 @@
+/*
+
 // my regular servo is having issues moving as fast aws the grove vision shield can let it so I am going to try the original 5 wire servo
 //This servo is actually a DC motor that I will need to use my dual motor driver an a potentiometer that tells where the motor is. 
 //This motor has a very small turning radius probably about 53 degrees to 127 degrees like the regular servo
 
 
+## or the 5 wire dc turning motor with potentiometer on the original shredder and Dual motor driver
+
+// red motor B1
+// black motor B2 
+// white 3V3
+// yellow A0
+// brown GND
+
+*/
 
 #include <Arduino.h>
 
