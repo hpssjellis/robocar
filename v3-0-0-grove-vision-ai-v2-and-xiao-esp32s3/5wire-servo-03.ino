@@ -41,7 +41,7 @@ void loop() {
   // Example usage: Turn motor to position 512
   digitalWrite(LED_BUILTIN,LOW);
 
-   analogWrite(myMotorPin, 50); 
+   //analogWrite(myMotorPin, 50); 
    delay(200);
   
   Serial.println("turn to 2000");
@@ -53,7 +53,7 @@ void loop() {
   turnMotorToPosition(1800);    
 
 
-  analogWrite(myMotorPin, 100); 
+ // analogWrite(myMotorPin, 100); 
   delay(2000); 
 
   
@@ -62,7 +62,7 @@ void loop() {
   digitalWrite(LED_BUILTIN,HIGH); 
 
 
-  analogWrite(myMotorPin, 150);  
+  //analogWrite(myMotorPin, 150);  
   delay(2000);   
 
   
@@ -81,10 +81,10 @@ void turnMotorToPosition(int desiredPosition) {
   while (abs(currentPosition - desiredPosition) > 10) { // Allow a tolerance of 10 units
     if (currentPosition < desiredPosition) {
       digitalWrite(myMotorDirPin, HIGH); // Set motor direction forward
-      analogWrite(myMotorPin, 50); // Adjust PWM value for speed
+      analogWrite(myMotorPin, 70); // Adjust PWM value for speed
     } else {
       digitalWrite(myMotorDirPin, LOW); // Set motor direction reverse
-      analogWrite(myMotorPin, 50); // Keep same speed, change direction
+      analogWrite(myMotorPin, 70); // Keep same speed, change direction
     }
     delay(100); // Short delay to allow the motor to move.   need to see how short this can be.
     currentPosition = analogRead(myPotPin); // Update the potentiometer reading
