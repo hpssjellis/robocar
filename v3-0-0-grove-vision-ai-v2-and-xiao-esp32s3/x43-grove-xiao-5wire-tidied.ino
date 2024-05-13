@@ -37,7 +37,7 @@
 SSCMA AI;
 
 // Define motor and sensor pins
-const int myDrivePwmPin = D0;
+const int myDrivePwmPin = A0;
 const int myTurnPotPin = A2;
 const int myTurnDirPin = A8;
 const int myTurnPwmPin = A9;
@@ -63,10 +63,11 @@ const int myTurnOk = 50;
 const int myTurnDelay = 5;
 
 void setup() {
+    Serial.begin(115200); 
+    pinMode(LED_BUILTIN, OUTPUT);
+    
     pinMode(myTurnPwmPin, OUTPUT);
     pinMode(myTurnDirPin, OUTPUT);
-    pinMode(LED_BUILTIN, OUTPUT);
-    Serial.begin(115200); 
     pinMode(myDrivePwmPin, OUTPUT);   
 
     Serial.println("Ready");   
@@ -76,31 +77,34 @@ void setup() {
     
     Serial.println("Setup Grove AV V2");    
     delay(50);
-    Serial.println("Did it work?");    
-    delay(50);
 
     AI.begin();  // Initialize Grove Vision AI V2 
-
+    Serial.println("Did it work?");    
+    delay(50);
+    
     Serial.println("motors testing");    
     delay(500);
 
     // Test motors
     Serial.println("motor testing turn to center");
-    myRandom = random(4000);
-    turnMotorToPosition(myRandom);
-    delay(500);
-    Serial.println("Go Left");
+    //myRandom = random(4000);
+    turnMotorToPosition(2045);
     analogWrite(myDrivePwmPin, mySlowestSpeed); // Slowest speed motor test
-    delay(500);                
-    Serial.println("stop turn center");                
+    delay(1000);   
+                 
+ 
+    Serial.println("Stop and turn Left");              
     analogWrite(myDrivePwmPin, 0); // Stop motor
-    myRandom = random(4000);
-    turnMotorToPosition(myRandom);
-    delay(500);       
-    Serial.println("turn right");                
-    myRandom = random(4000);
-    turnMotorToPosition(myRandom);
-    delay(500);       
+   // myRandom = random(4000);
+    turnMotorToPosition(0);
+    delay(1000);     
+      
+    Serial.println("go and turn right");                
+   // myRandom = random(4000);
+    turnMotorToPosition(4000);
+    delay(1000);       
+         
+    analogWrite(myDrivePwmPin, 0); // Stop motor
     Serial.println("Motor test done");    
 }
 
