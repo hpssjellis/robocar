@@ -15,7 +15,7 @@ https://sensecraft.seeed.cc/ai/#/device/local
 
 
 
-convert your edgeimpulse int8 quantized model from  .lite   to .tflite   (just change the name then do the following on a google colab)
+convert your edgeimpulse int8 quantized model from  .lite   to .tflite   (just change drag and drop onto google colab then change the extension from .loite to .tflite)
 
 ```
 !pip install ethos-u-vela
@@ -33,3 +33,12 @@ Then run this command, replacing filename with your file name
 ```
 
 The last command should allow uploading the .tflite labelled file and it downloading the proper .tflite file that sensecraft can then install on your grove vision V2 ai
+
+
+
+
+My Colab is at 
+
+https://colab.research.google.com/drive/1y6_UrLV31ou59T00OmHwqDJIT-tcbCMo?usp=sharing
+
+
