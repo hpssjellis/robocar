@@ -20,6 +20,7 @@ convert your edgeimpulse int8 quantized model from  .lite   to .tflite   (just c
 ```
 !pip install ethos-u-vela
 !!vela --version
+!ls
 !vela ei-periquito-vs-robot-int8.tflite --accelerator-config ethos-u55-64
 
 ```
