@@ -12,3 +12,16 @@ https://www.hackster.io/mjrobot/computer-vision-at-the-edge-with-grove-vision-ai
 
 
 https://sensecraft.seeed.cc/ai/#/device/local
+
+
+
+convert your edgeimpulse int8 quantized model from  .lite   to .tflite   (just change the name then do the following on a google colab)
+
+```
+!pip install ethos-u-vela
+!!vela --version
+!vela ei-periquito-vs-robot-int8.tflite --accelerator-config ethos-u55-64
+
+```
+
+The last command should allow uploading the .tflite labelled file and it downloading the proper .tflite file that sensecraft can then install on your grove vision V2 ai
