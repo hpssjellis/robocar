@@ -10,4 +10,5 @@ https://www.hackster.io/mjrobot/computer-vision-at-the-edge-with-grove-vision-ai
 
 # good site The main sensecraft site. You don't need to put your address
 
-https://sensecraft.seeed.cc/ai/#/device
+
+https://sensecraft.seeed.cc/ai/#/device/local
