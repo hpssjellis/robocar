@@ -184,12 +184,12 @@ void loop() {
 
 void turnMotorToPosition(int desiredPosition) {
     currentPosition = analogRead(myTurnPotPin);    
-    if (desiredPosition < 200 && currentPosition < 1050  ){
+    if (desiredPosition < 450 && currentPosition < 1000  ){  // measure and estimate these. I did break a 5 wire motor somehow.
        Serial.print(" Danger! Too Low, Desired:" + String(desiredPosition) + ", Current: " + String(currentPosition));
        analogWrite(myTurnPwmPin, 0); //    stop
        return;
     }
-     if (desiredPosition > 4000 && currentPosition > 3000 ){
+     if (desiredPosition > 4000 && currentPosition > 3000 ){ // measure and estimate these. I did break a 5 wire motor somehow.
        Serial.print(" Danger! Too High, Desired:" + String(desiredPosition) + ", Current: " + String(currentPosition));
        analogWrite(myTurnPwmPin, 0);  // stop 
        return;
