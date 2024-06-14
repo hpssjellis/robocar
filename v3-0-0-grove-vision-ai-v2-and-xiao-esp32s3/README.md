@@ -1,4 +1,23 @@
-like it says
+Grove with XIAO-ESP32S3 
+
+Grove can be programmed using the IDF Matter programmer
+https://wiki.seeedstudio.com/getting_started_with_matter/
+
+
+or with AT commands
+https://wiki.seeedstudio.com/grove_vision_ai_v2_at/
+
+
+XIAO ESP32S3 needs this board loaded onto the Arduino IDE. If you have multiple boards put a comma no space between them.
+
+```https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json```
+
+
+
+Demos for both
+
+https://wiki.seeedstudio.com/grove_vision_ai_v2_demo/
+
 
 
 essential reading
